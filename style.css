@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('langit.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav .menu ul li:hover > a {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav .menu ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav .menu ul li:hover .submenu {
+    display: block;
+}
+
+nav .menu ul li .submenu li {
+    margin: 0;
+}
+
+nav .menu ul li .submenu li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+}
+
+nav .menu ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+nav .menu ul li .submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 5px;
+}
+
+.background-container {
+    text-align: center;
+    color: black;
+    padding: 50px 0;
+}
+
+.background-container img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.background-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #FFFFFF;
+}
+
+.background-container p {
+    font-size: 18px;
+}
